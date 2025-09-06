@@ -43,11 +43,31 @@ var activeDesigns = new Swiper(".activeDesigns", {
 });
 
 // video
-
-  const video1 = document.getElementById('myVideo1');
-  const video2 = document.getElementById('myVideo2');
-  const video3 = document.getElementById('myVideo3');
-  const video4 = document.getElementById('myVideo4');
+ const video1 = document.getElementById('myVideo1');
+        const video2 = document.getElementById('myVideo2');
+        const video3 = document.getElementById('myVideo3');
+        const video4 = document.getElementById('myVideo4');
+        
+        // اضافه کردن event listener برای پایان ویدیوها
+        video1.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play();
+        });
+        
+        video2.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play();
+        });
+        
+        video3.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play();
+        });
+        
+        video4.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play();
+        });
         
         function playVideo() {
             video1.play();
@@ -78,20 +98,20 @@ var activeDesigns = new Swiper(".activeDesigns", {
                 playPromise1.catch(error => {
                     console.log("پخش خودکار متوقف شد: ", error);
                 });
-            };
-                 if (playPromise2 !== undefined) {
+            }
+            if (playPromise2 !== undefined) {
                 playPromise2.catch(error => {
                     console.log("پخش خودکار متوقف شد: ", error);
                 });
-            };
-                 if (playPromise3 !== undefined) {
+            }
+            if (playPromise3 !== undefined) {
                 playPromise3.catch(error => {
                     console.log("پخش خودکار متوقف شد: ", error);
                 });
-            };
-                 if (playPromise4 !== undefined) {
+            }
+            if (playPromise4 !== undefined) {
                 playPromise4.catch(error => {
                     console.log("پخش خودکار متوقف شد: ", error);
                 });
-            };
+            }
         });
