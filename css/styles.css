@@ -199,8 +199,16 @@ a {
     width: 18px;
 }
 
+.w-33{
+    width: 33px;
+}
+
 .w-47 {
     width: 47px;
+}
+
+.w-51{
+    width: 51px;
 }
 
 .w-53 {
@@ -237,6 +245,10 @@ a {
     height: 5px;
 }
 
+.h-6{
+    height: 6px;
+}
+
 .h-15 {
     height: 15px;
 }
@@ -257,6 +269,10 @@ a {
     height: 30px;
 }
 
+.h-33{
+    height: 33px;
+}
+
 .h-35 {
    height: 35px;
 }
@@ -271,6 +287,10 @@ a {
 
 .h-47 {
     height: 47px;
+}
+
+.h-51{
+    height: 51px;
 }
 
 .h-192 {
@@ -347,6 +367,10 @@ a {
     margin: 21px;
 }
 
+.mt-22{
+    margin-top: 22px;
+}
+
 .mb-22 {
     margin-bottom: 22px;
 }
@@ -359,8 +383,16 @@ a {
     margin-bottom: 26px;
 }
 
+.mb-28 {
+    margin-bottom: 28px;
+}
+
 .mt-28 {
     margin-top: 28px;
+}
+
+.mt-35 {
+    margin-top: 35px;
 }
 
 .-mb-37 {
@@ -373,6 +405,11 @@ a {
 
 .mt-43 {
     margin-top: 43px;
+}
+
+.mx-44{
+    margin-right: 44px;
+    margin-left: 44px;
 }
 
 .mt-47 {
@@ -479,6 +516,10 @@ a {
     top: -9px;
 }
 
+.top-15{
+    top: 15px;
+}
+
 .-top-80 {
     top: -80px;
 }
@@ -497,6 +538,10 @@ a {
 
 .right-auto{
     right: auto !important;
+}
+
+.right-6{
+    right: 6px;
 }
 
 /* object fit */
@@ -622,6 +667,32 @@ a {
     border-bottom: 1px solid #051030;
     font-weight: 600;
     color: #051030;
+}
+
+/* accordion */
+
+.accordionContent,.accordionContent2{
+    transition: all .4s;
+    max-height: 0;
+    overflow: hidden;
+}
+.accordionContent.active,.accordionContent2.active{
+    max-height: 2000px;
+}
+
+.accordionBtn img.me-auto,.accordionBtn2 > div img,.accordionBtn2 > div svg{
+    transition: all .4s;
+}
+.accordionBtn2 > div img,.accordionBtn2.active > div svg{
+    opacity: 0;
+    visibility: hidden;
+}
+.accordionBtn2.active > div img,.accordionBtn2 > div svg{
+    opacity: 100%;
+    visibility: visible;
+}
+.accordionBtn.active img.me-auto{
+    transform: rotate(180deg);
 }
 
 /* hover */
