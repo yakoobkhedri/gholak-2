@@ -181,6 +181,10 @@ a {
     background-color: #F8F8F8;
 }
 
+.bg-gray-3{
+    background-color: #0000000A;
+}
+
 .bg-darkblue{
     background-color: #051030;
 }
@@ -226,13 +230,19 @@ a {
 .w-53 {
     width: 53px;
 }
-
+.w-107{
+    width: 107px;
+}
 .w-114 {
     width: 114px;
 }
 
 .w-134 {
     width: 134px;
+}
+
+.w-140{
+    width: 140px;
 }
 
 .w-142 {
@@ -307,6 +317,10 @@ a {
 
 .h-47 {
     height: 47px;
+}
+
+.h-48{
+    height: 48px;
 }
 
 .h-51{
@@ -413,6 +427,10 @@ a {
 
 .mt-28 {
     margin-top: 28px;
+}
+
+.mt-30{
+    margin-top: 30px;
 }
 
 .mt-35 {
@@ -619,6 +637,10 @@ a {
     border-radius: 10px;
 }
 
+.rounded-12{
+    border-radius: 12px;
+}
+
 .rounded-20 {
     border-radius: 20px;
 }
@@ -737,6 +759,22 @@ a {
     font-weight: 600;
     color: #051030;
 }
+.tabContent{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+            animation: fadeIn 0.5s ease forwards;
+}
+.tabContent.active{
+    display: block;
+    opacity: 100%;
+    visibility: visible;
+}
+@keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
 
 /* accordion */
 
@@ -918,6 +956,18 @@ header nav ul li a.active::after,header nav ul li a:hover::after{
   }
 }
 
+@media only screen and (max-width:992px) {
+   .w-lg-132{
+    width: 132px !important;
+   }
+}
+
+@media only screen and (max-width:768px) {
+   .w-md-100{
+    width: 100% !important;
+   }
+}
+
 @media only screen and (max-width:576px) {
     .fs-sm-8{
         font-size: 8px;
@@ -954,6 +1004,9 @@ header nav ul li a.active::after,header nav ul li a:hover::after{
     }
     .h-sm-240{
         height: 240px;
+    }
+    .w-sm-100{
+        width: 100%;
     }
     .px-sm-44{
         padding-left: 4px;
