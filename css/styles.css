@@ -201,6 +201,13 @@ a {
     background-color: #FFFFFF29;
 }
 
+/* max width */
+
+.max-w-386{
+    max-width: 386px;
+    width: 100%;
+}
+
 /* width */
 
 .w-5 {
@@ -449,6 +456,10 @@ a {
     margin-top: 40px;
 }
 
+.mt-42{
+    margin-top: 42px;
+}
+
 .mr-42{
     margin-right: 42px;
 }
@@ -488,6 +499,10 @@ a {
 
 .mt-60 {
     margin-top: 60px;
+}
+
+.mt-63 {
+    margin-top: 63px;
 }
 
 .-mt-63 {
@@ -697,6 +712,9 @@ a {
 }
 .border-dashed-gray-2{
     border: 2px dashed #CEDBFF;
+}
+.border-gray-3{
+    border: 1px solid #CEDBFF;
 }
 .border-brown{
     border: 1px solid #C39A6D;
