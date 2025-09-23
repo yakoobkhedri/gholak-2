@@ -200,6 +200,15 @@ a {
 .bg-white-16 {
     background-color: #FFFFFF29;
 }
+.bg-brown-25{
+    background-color: #C39A6D40;
+}
+
+/* transition */
+
+.transition{
+    transition: all .4s;
+}
 
 /* max width */
 
@@ -344,6 +353,10 @@ a {
     height: 52px;
 }
 
+.h-53 {
+    height: 53px;
+}
+
 .h-192 {
     height: 192px;
 }
@@ -380,6 +393,10 @@ a {
 
 .mb-11 {
     margin-bottom: 11px;
+}
+
+.mt-12 {
+    margin-top: 12px;
 }
 
 .mb-12 {
@@ -602,6 +619,12 @@ a {
     padding-bottom: 119px;
 }
 
+/* box shadow */
+
+.shadow-1{
+    box-shadow: 0px 15px 32px 0px #3D3D3D12;
+}
+
 /* bottom */
 
 .-bottom-8{
@@ -720,6 +743,11 @@ a {
 
 .rounded-12 {
     border-radius: 12px;
+}
+
+.rounded-b-12{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 .rounded-20 {
@@ -940,6 +968,10 @@ a {
 
 .btnHover1:hover svg path {
     stroke: white !important;
+}
+
+.boxHover:hover div:last-child{
+    background-color: #C39A6D;
 }
 
 /* swiper */
