@@ -189,6 +189,10 @@ a {
     background-color: #0000000A;
 }
 
+.bg-gray-4{
+    background-color: #E3EAFF;
+}
+
 .bg-darkblue {
     background-color: #051030;
 }
@@ -202,6 +206,10 @@ a {
 }
 .bg-brown-25{
     background-color: #C39A6D40;
+}
+
+.bg-gradient-1{
+    background: linear-gradient(133.7deg, #051030 6.78%, rgba(255, 255, 255, 0.37) 137.78%);
 }
 
 /* transition */
@@ -249,6 +257,10 @@ a {
 
 .w-53 {
     width: 53px;
+}
+
+.w-60 {
+    width: 60px;
 }
 
 .w-107 {
@@ -357,6 +369,10 @@ a {
     height: 53px;
 }
 
+.h-60 {
+    height: 60px;
+}
+
 .h-192 {
     height: 192px;
 }
@@ -367,6 +383,12 @@ a {
 
 .h-506 {
     height: 506px;
+}
+
+/* min height */
+
+.min-h-235{
+    min-height: 235px;
 }
 
 /* margin */
@@ -463,6 +485,14 @@ a {
     margin-top: 30px;
 }
 
+.mr-31 {
+    margin-right: 31px;
+}
+
+.-mt-33 {
+    margin-top: -33px;
+}
+
 .mt-35 {
     margin-top: 35px;
 }
@@ -530,6 +560,10 @@ a {
 
 .ml-71 {
     margin-left: 71px;
+}
+
+.mt-75 {
+    margin-top: 75px;
 }
 
 .mt-85 {
@@ -972,6 +1006,16 @@ a {
 
 .boxHover:hover div:last-child{
     background-color: #C39A6D;
+}
+
+.boxHover2, .boxHover2 *{
+  transition: all .4s;
+}
+
+.boxHover2:hover{
+    background-color: #051030 !important;
+    box-shadow: 0px 15px 32px 0px #05103045;
+    color: white;
 }
 
 /* swiper */

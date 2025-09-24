@@ -42,6 +42,30 @@ var activeDesigns = new Swiper(".activeDesigns", {
   }
 });
 
+var whyUs = new Swiper(".whyUs", {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  autoplay: true,
+  breakpoints: {
+       576: {
+      slidesPerView: 2,
+    },
+     768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+    1300: {
+         slidesPerView: 6,
+      spaceBetween: 24,
+    },
+  }
+});
+
 
 // accordion
 
