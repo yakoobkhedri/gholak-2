@@ -47,10 +47,10 @@ var whyUs = new Swiper(".whyUs", {
   spaceBetween: 16,
   autoplay: true,
   breakpoints: {
-       576: {
+    576: {
       slidesPerView: 2,
     },
-     768: {
+    768: {
       slidesPerView: 3,
     },
     992: {
@@ -60,8 +60,44 @@ var whyUs = new Swiper(".whyUs", {
       slidesPerView: 5,
     },
     1300: {
-         slidesPerView: 6,
+      slidesPerView: 6,
       spaceBetween: 24,
+    },
+  }
+});
+
+var team = new Swiper(".team", {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  centeredSlides: true,
+  autoplay: true,
+  loop: true,
+  breakpoints: {
+    576: {
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: 2,
+    },
+    768: {
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: 3,
+    },
+    992: {
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+    1200: {
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: 5,
+    },
+    1300: {
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: 5.8,
     },
   }
 });
