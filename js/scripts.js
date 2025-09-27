@@ -63,45 +63,79 @@ var whyUs = new Swiper(".whyUs", {
       slidesPerView: 6,
       spaceBetween: 24,
     },
-  }
+  },
+   navigation: {
+    nextEl: ".swiper-button-next",
+  },
 });
 
 var team = new Swiper(".team", {
-  slidesPerView: 1,
-  spaceBetween: 16,
-  centeredSlides: true,
+  slidesPerView: 2,
+  spaceBetween: 8,
+  centeredSlides: false,
   autoplay: true,
   loop: true,
   breakpoints: {
     576: {
       centeredSlides: true,
-      loop: true,
-      slidesPerView: 2,
+      slidesPerView: 2.8,
+       spaceBetween: 16,
     },
     768: {
       centeredSlides: true,
-      loop: true,
-      slidesPerView: 3,
+      slidesPerView: 3.5,
     },
     992: {
       centeredSlides: true,
-      loop: true,
       slidesPerView: 4,
       spaceBetween: 24,
     },
     1200: {
       centeredSlides: true,
-      loop: true,
       slidesPerView: 5,
+      spaceBetween: 24,
     },
     1300: {
       centeredSlides: true,
-      loop: true,
       slidesPerView: 5.8,
+      spaceBetween: 24,
+    },
+  },
+    navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+});
+
+var companies = new Swiper(".companies", {
+  slidesPerView: 2,
+  spaceBetween: 16,
+  centeredSlides: false,
+  autoplay: true,
+  loop: true,
+  breakpoints: {
+    576: {
+      loop: true,
+      slidesPerView: 3,
+    },
+    768: {
+      loop: true,
+      slidesPerView: 4,
+    },
+    992: {
+      loop: true,
+      slidesPerView: 5,
+    },
+    1200: {
+      loop: true,
+      slidesPerView: 6,
+    },
+    1300: {
+      loop: true,
+      slidesPerView: 7.5,
     },
   }
 });
-
 
 // accordion
 

@@ -255,12 +255,20 @@ a {
     width: 51px;
 }
 
+.w-52 {
+    width: 52px;
+}
+
 .w-53 {
     width: 53px;
 }
 
 .w-60 {
     width: 60px;
+}
+
+.w-80 {
+    width: 80px;
 }
 
 .w-107 {
@@ -695,7 +703,9 @@ a {
 .top-21 {
     top: 21px;
 }
-
+.-top-28 {
+    top: -28px;
+}
 .-top-80 {
     top: -80px;
 }
@@ -711,6 +721,9 @@ a {
 }
 .left-204{
     left: 204px;
+}
+.left-220{
+    left: 220px !important;
 }
 
 /* right */
@@ -1066,6 +1079,11 @@ a {
     top: -1px;
 }
 
+.whyUs .swiper-button-next::after {
+   color: #292D32;
+   font-size: 19px;
+}
+
 /* overlay */
 
 #overlay {
@@ -1282,5 +1300,11 @@ header nav ul li a:hover::after {
     .px-sm-44 {
         padding-left: 4px;
         padding-right: 4px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .fs-xs-10 {
+        font-size: 10px;
     }
 }
