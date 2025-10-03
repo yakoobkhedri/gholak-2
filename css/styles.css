@@ -147,6 +147,10 @@ a {
     color: #CEDBFF;
 }
 
+.text-gray-2{
+    color: #8E8E8E99;
+}
+
 .text-gray-60 {
     color: #292D3299;
 }
@@ -245,6 +249,10 @@ a {
 
 .w-40 {
     width: 40px;
+}
+
+.w-42 {
+    width: 42px;
 }
 
 .w-47 {
@@ -351,6 +359,10 @@ a {
 
 .h-40 {
     height: 40px;
+}
+
+.h-42 {
+    height: 42px;
 }
 
 .h-46 {
@@ -562,6 +574,10 @@ a {
     margin-top: 54px;
 }
 
+.mt-55 {
+    margin-top: 55px;
+}
+
 .mr-55 {
     margin-right: 55px;
 }
@@ -629,6 +645,11 @@ a {
 .px-8 {
     padding-left: 8px;
     padding-right: 8px;
+}
+
+.py-11 {
+    padding-top: 11px;
+    padding-bottom: 11px;
 }
 
 .p-12 {
@@ -871,6 +892,10 @@ a {
     border: 1px solid #CEDBFF;
 }
 
+.border-gray-4{
+    border: 1px solid #F7F5F5;
+}
+
 .border-brown {
     border: 1px solid #C39A6D;
 }
@@ -905,6 +930,10 @@ a {
 
 .gap-22 {
     gap: 22px;
+}
+
+.gap-27 {
+    gap: 27px;
 }
 
 .gap-32 {
@@ -1000,6 +1029,13 @@ a {
     visibility: visible;
 }
 
+.tabbutton{
+    transition: all .4s;
+}
+.tabbutton.active{
+    color: #051030;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -1013,15 +1049,37 @@ a {
 /* accordion */
 
 .accordionContent,
-.accordionContent2 {
+.accordionContent2,.accordionContent3 {
     transition: all .4s;
     max-height: 0;
     overflow: hidden;
 }
 
 .accordionContent.active,
-.accordionContent2.active {
+.accordionContent2.active,.accordionContent3.active {
     max-height: 2000px;
+}
+
+.accordionBtn3 p,.accordionBtn3 div,.accordionBtn3 div svg,.accordionBtn3 div svg path,.accordionBox{
+  transition: all .4s;
+}
+
+.accordionBtn3.active p{
+  color: white;
+}
+.accordionBtn3.active div{
+  background-color: white;
+}
+.accordionBtn3.active div svg{
+    transform: rotate(180deg);
+}
+.accordionBtn3.active div svg path{
+    stroke: #5653FF;
+}
+.accordionBox.active{
+    background-color: #051030;
+    box-shadow: 0px 9px 19px 0px #C2C2C21A;
+    border: 1px solid #5653FF;
 }
 
 .accordionBtn img.me-auto,

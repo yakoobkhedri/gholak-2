@@ -141,6 +141,7 @@ var companies = new Swiper(".companies", {
 
 let accordionBtn = Array.from(document.getElementsByClassName('accordionBtn'));
 let accordionBtn2 = Array.from(document.getElementsByClassName('accordionBtn2'));
+let accordionBtn3 = Array.from(document.getElementsByClassName('accordionBtn3'));
 
 accordionBtn.forEach((item) => {
   item.addEventListener('click', function () {
@@ -152,6 +153,14 @@ accordionBtn.forEach((item) => {
 accordionBtn2.forEach((item) => {
   item.addEventListener('click', function () {
     item.classList.toggle('active');
+    item.nextElementSibling.classList.toggle('active');
+  })
+});
+
+accordionBtn3.forEach((item) => {
+  item.addEventListener('click', function () {
+    item.classList.toggle('active');
+    item.parentElement.classList.toggle('active');
     item.nextElementSibling.classList.toggle('active');
   })
 });
@@ -184,4 +193,15 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+});
+
+var portfolio = $('#portfolio-container').isotope({
+    originLeft: false
+});
+$('#portfolio-filter div').on('click', function () {
+    $("#portfolio-filter div").removeClass('active');
+    $(this).addClass('active');
+    portfolio.isotope({
+        filter: $(this).data('filter')
+    });
 });
