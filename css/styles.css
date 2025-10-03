@@ -1417,6 +1417,10 @@ header nav ul li a:hover::after {
         padding-left: 4px;
         padding-right: 4px;
     }
+
+    .gap-sm-8{
+        gap: 8px;
+    }
     .bg-sm-transparent{
         background-color: transparent;
     }
